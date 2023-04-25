@@ -1,0 +1,17 @@
+.noticia {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .noticia1 h2 {
+    color: blue;
+  }
+  
+  .noticia2 h2 {
+    color: red;
+  }
+  
+  .noticia3 h2 {
+    color: green;
+  }

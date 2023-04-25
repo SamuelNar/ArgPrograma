@@ -1,0 +1,135 @@
+.navbar {
+    list-style-type: none; /* Quita los puntos de la lista */
+    margin: 0; /* Quita el margen exterior */
+    padding: 0; /* Quita el padding exterior */
+    display: flex; /* Crea un contenedor flexible */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    background-color: white/* Agrega un color de fondo */
+}
+
+.navbar li {
+    margin: 0 2px; /* Agrega espacio horizontal entre los elementos */
+}
+
+.navbar li a {
+    display: block; /* Convierte los enlaces en elementos de bloque */
+    color: rgb(1, 1, 1); /* Cambia el color del texto */
+    text-align: center; /* Alinea el texto horizontalmente */
+    padding: 14px 16px; /* Agrega un padding interno a los enlaces */
+    text-decoration: none; /* Quita la decoración de los enlaces */
+}
+
+.navbar li a:hover {
+    background-color: #bd5f5f; /* Agrega un color de fondo al pasar el ratón por encima */
+}
+
+.banner h2{
+    color: white;
+}
+
+.banner p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.banner button{
+        background-color: #E21982; /* Cambia el color de fondo del botón */
+		color: rgb(250, 246, 246); /* Cambia el color del texto del botón */
+		padding: 10px 20px; /* Agrega un padding interno al botón */
+		border: none; /* Quita el borde del botón */
+		border-radius: 20px; /* Agrega un borde redondeado al botón */
+		font-size: 16px; /* Cambia el tamaño de la fuente del botón */
+		cursor: pointer; /* Camb*/
+}
+.banner{
+   background-image: url(../img/banner-principal.jpg);
+   background-size: cover;
+   background-position: center center;
+   height: 500px;
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+}
+
+.banner .contenido{
+    text-align: center;
+    color: white;
+}
+.quienes_somos{
+    background-color:#E8E8E8;
+    padding: 30px;
+    text-align: center;
+}
+.quienes_somos h2{
+    color:#22193F;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.quienes_somos h5{
+    color:#E21982 ;
+}
+.quienes_somos p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.anima{
+    color:#22193F;
+    font-weight: bold;
+}
+
+#contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#contenedor .carta{
+    text-align: center;
+}
+
+#contenedor .icono{
+    font-size: 2em;
+}
+
+#seccion{
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+#aux{
+    background-color: #E21982;
+    width: 100%;
+    margin: 50px 0;
+    text-align: center;
+}
+
+#aux .contenedor{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+}
+
+#aux .info{
+    flex: 1;
+}
+
+#aux p{
+    font-size: 1.5em; line-height: 1.5;
+    color: white;
+    font-weight: bold;
+}
+
+#aux .second{
+    background-color: #E21982;
+    font-size: 1.3em;
+    color: rgb(246, 243, 243);
+    /*border: 1px solid white;*/
+    border-color: white;
+    border-width: 1px;
+    padding: 10px 20px;
+    border-radius: 25px;
+}

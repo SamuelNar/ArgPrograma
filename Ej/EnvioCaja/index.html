@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solicitud de envío de caja de cartón</title>
+  </head>
+  <body>
+    <h1>Solicitud de envío de caja de cartón</h1>
+    <form>
+      <label for="nombre"> Nombre del cliente </label><br>
+      <input type="text" name="nombre" id="nombre"><br>
+
+      <label for="material">Material:</label>
+      <select id="material" name="material">
+        <option value="carton">Cartón</option>
+        <option value="plastico">Plástico</option>
+        <option value="madera">Madera</option>
+      </select><br>
+
+      <input type="radio" id="diminuta" name="diminuta" value="diminuta" required>
+      <label for="diminuta">Diminuta</label><br>
+      <input type="radio" id="genero-femenino" name="genero" value="femenino">
+      <label for="genero-femenino">Mediana</label><br>
+      <input type="radio" id="genero-otro" name="genero" value="otro">
+      <label for="genero-otro">Grande</label><br>
+
+      
+
+      <label for="comentario">comentario</label>
+      <textarea id = "comentario" name="direccion" required></textarea><br>
+
+      <input type="submit" value="Enviar">
+      <input type="text" name="">
+    </form>
+  </body>
+</html>
+
+

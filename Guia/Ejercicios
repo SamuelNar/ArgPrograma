@@ -1,0 +1,199 @@
+//Ejercicio 1
+function Type(varible ){
+	variable="Hola";
+	console.log(typeof(variable));
+}
+var n;
+type(n);
+
+//Ejercicio 2
+function Resta(num1,num2){
+	num1=parseInt(prompt("Ingrese el primer numero"));
+	num2=parseInt(prompt("Ingrese el segundo numero"));
+	console.log("La resta es: "+(num1-num2));
+}
+
+var numero1,numero2;
+resta(numero1,numero2);
+
+//Ejercicio 3
+
+function Swap(a,b){
+	let aux;
+	a=parseInt(prompt("Ingrese 'a' "));
+	b=parseInt(prompt("Ingrese 'b' "));
+	console.log("a = "+a);
+	console.log("b = "+b);
+	aux=a;
+	a=b;
+	b=aux;
+	console.log("a ahora vale = "+a);
+	console.log("b ahora vale = "+b);
+}
+
+var num1,num2;
+swap(num1,num2)
+
+//Ejercicio 4
+function Perimetro(lado){
+	let perimetro = 4*lado;
+	return perimetro;
+}
+var lado = parseInt(prompt("Ingrese un lado del cuadrado"));
+console.log("perimetro: "+perimetro(lado));
+
+//Ejercicio 5
+function ConvertirGrados(fahrenheit){
+    let celsius=(fahrenheit-32)*(5/9);
+    return celsius;
+}
+var faren = parseInt(prompt("Ingrese grado fahrenheit"));
+var cels=ConvertirGrados(faren);
+console.log(faren + "grados fahrenheit equivalen a "+cels+" grados celsius");
+
+//Ejercicio 6
+function factorial(){
+	var fac=1;
+	let num=parseInt(prompt("Ingrese numero entre 0 y 10: "));
+	if(num>10){
+		console.log("Numero mayor a 10");
+		return;
+	}
+	for(var i = 1 i <=num; i++) {
+			fac*=i;
+		}	
+	console.log("factorial de "+num+" es"+fac);
+}
+factorial();
+
+//Ejercicio 7   
+function esPalindromo(){
+	var pal = prompt("Ingrese su palabra");
+	var palInvertida=""
+	pal=pal.toLowerCase().replace(/\s/g,"");  //Eliminamos espacios y pasamos a minuscuas
+	for (var i = pal.length - 1; i >= 0; i--) {
+        palInvertida=palInvertida+pal[i];
+	}   // el for invierte la frase
+
+	if(pal===palInvertida){
+		console.log("Palabra palindroma");
+	}else{
+		console.log("Palabra no palindroma");
+	}
+}
+
+//ejercicio 8
+function ConvertirMayus(pal){
+   pal=pal.toUpperCase();
+   return pal;
+}
+
+function ConvertirMinus(pal){
+      pal=pal.toLowerCase();
+      return pal;
+}
+var pal = prompt("Ingrese su palabra");
+console.log(ConvertirMayus(pal));
+console.log(ConvertirMinus(pal));
+//Ejercicio 9
+function Calificacion(nota){
+	switch(nota){
+	case 0:
+	case 1:
+	case 2:
+			console.log("Muy deficiente");
+			break;
+	case 3:
+	case 4:
+		console.log("Insuficiente");
+		break;
+	case 5:
+		console.log("Suficient");
+		break;
+	case 6:
+	case 7:
+		console.log("Bien");
+		break;
+	case 8:
+	case 9:
+		console.log("Notable");
+		break;
+	case 10:
+		console.log("Sobresaliente");
+		break;
+	default:
+		console.log("Nota incorrecta")	
+		break;    	    
+	}
+}
+var not=parseInt(prompt("Ingrese nota: "));
+Calificacion(not);
+
+//Ejercicio 10
+function Meses(mes){
+	switch(mes){
+	case 1:
+	case 3:
+	case 5:
+	case 7:	
+	case 8:	
+	case 10:	
+	case 12:
+		console.log("Tiene 31 dias");
+			break;	
+	case 2:
+			console.log("Tiene 28 dias");
+			break;
+	case 4:				
+	case 6:	
+	case 9:		
+	case 11:
+			console.log("Tiene 30 dias");
+			break;
+	default:
+		console.log("mes incorrecto")	    	    
+	}
+}
+var mes=parseInt(prompt("Ingrese un mes en numero: "));
+Meses(mes);
+
+//Ejercicio 11
+function piramide(){
+	 let num = parseInt(prompt("Ingrese un numero del 1 al 10: "));
+
+	 if(num<=10){
+	 	let aux = "";
+	 	for (var i = 1; i<= num ; i++) {
+	 		for (var j = 1; j<=i; j++) {
+	 			aux+=j + " ";
+	 		}
+	 		aux+="\n";
+	 	}
+	 	console.log(aux);
+	 }else{
+	 	console.log("El numero ingresado es mayor a 10");	 	
+	 }
+}
+piramide();
+
+function calcular(bultosStock,bultosCaja){
+	const caja = bultosStock/bultosCaja;
+	const sueltos = bultosStock % bultosCaja;
+	console.log("Cajas que se completaron: "+caja); 
+	console.log("Bultos sueltos: "+sueltos); 
+}
+calcular(46,5);
+
+function descuento(codigo){
+	let descuento = 0;
+	codigo=codigo.toUpperCase(codigo);
+	if(codigo === "FIESTA"){
+		descuento=0.05;
+	}else if (codigo === "FOCUS"){
+		descuento =0.1;
+	}else{
+		descuento="incorrecto";
+	}
+	return descuento;
+}
+console.log(descuento("fiesta"));
